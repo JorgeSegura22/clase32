@@ -73,6 +73,9 @@ label {
   }
 
   .boton-volver{
-    margin-bottom: auto;
+display: flex;
+
+   
+    margin: auto;
 
   } 
