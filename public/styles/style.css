@@ -1,0 +1,78 @@
+.body-index{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 24px;
+   background-image: url("/images/multicolor.jpg");
+   background-repeat: no-repeat;
+   background-size:contain;
+   color:#fff
+}
+body.rojo {
+    background-color: red;
+    color: white;
+  }
+  
+  body.azul {
+    background-color: blue;
+    color: white;
+  }
+  
+  body.verde {
+    background-color: green;
+    color: white;
+  }
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+  
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 40vw;
+    
+}
+
+input {
+    width: 300px; /* Establecer el ancho deseado */
+    padding: 8px; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+select{
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 5px;
+}
+label {
+    width: 300px; /* Ancho fijo para todos los labels */
+    
+    text-align: left; /* Alinear el texto del label a la izquierda */
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .mensaje{
+    width: 40vw;
+    margin-top: 30px;
+  }
+  button{
+    margin-bottom: 20px;
+  }
+
+  .boton-volver{
+    margin-bottom: auto;
+
+  } 

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Formulario</title>
+</head>
+<body class="<%= backgroundColor ? backgroundColor : "body-index"%>">
+  <h1>Formulario</h1>
+  <div class="formulario">
+    <form action="/submit" method="post" novalidate>
+      <div>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <p><%= errors && errors.nombre ? errors.nombre.msg : null %></p>
+      </div>
+      <div>
+        <label for="color">Elija un color:</label>
+        <select id="color" name="color" required>
+          <option value="rojo">Rojo</option>
+          <option value="azul">Azul</option>
+          <option value="verde">Verde</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <div>
+
+            <div>
+                <label for="recordarColorCheckbox" id="recordarColorLabel">Recordar color</label>
+                <input type="checkbox" id="recordarColorCheckbox" name="recordarColor" checked>
+              </div>
+            
+        </div>
+        
+      </div>
+      <div>
+        <label for="email">Ingrese su email:</label>
+        <input type="email" id="email" name="email" required>
+        <p><%= errors && errors.email ? errors.email.msg : null %></p>
+      </div>
+      <div>
+        <label for="edad">Ingrese su edad:</label>
+        <input type="text" id="edad" name="edad">
+        <p><%= errors && errors.edad ? errors.edad.msg : null %></p>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+   
+    <form action="/reset" method="post" novalidate>
+        <div>
+            <button id="olvidarColorButton" name="olvidarColor" value="true">olvidar color
+        </div>
+
+    </form>
+    <div class="mensaje">
+      <%= successMessage %>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias</title>
+  <link rel="stylesheet" href="/styles/style.css"> <!-- Enlaza tu archivo CSS externo -->
+</head>
+<body class="<%= backgroundColor %>">
+  <h1>¡Gracias por visitarnos!</h1>
+  <p><%= nombre %>, gracias por visitarnos.</p>
+
+  <%= successMessage %>
+
+  <form action="/" method="get" novalidate>
+    <div    class="boton-volver">
+        <button class="boton-volver" id="olvidarColorButton" name="olvidarColor" value="true">Volver
+    </div>
+
+</form>
+</body>
+</html>
